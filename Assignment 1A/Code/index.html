@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Admin Dashboard</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <script src="js/chart.js"></script>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+    <!-- navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold text-uppercase" href="#">ABC Electronics</a>
+          <button class="navbar-toggler" type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+          aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+            <form class="d-flex  ms-auto">
+                <div class="input-group mb-1"> <!-- ms -> margin start auto-->
+                    <input type="text" class="form-control" 
+                    placeholder="Recipient's username" 
+                    aria-label="Recipient's username" 
+                    aria-describedby="button-addon2">
+                    <button class="btn btn-primary" 
+                    type="button" id="button-addon2"><i class="bi bi-search"></i></button>
+                  </div>
+            </form>
+
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-person-circle"></i>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Order</a></li>
+                    <li><a class="dropdown-item" href="#">Products</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">About Us</a></li>
+                  </ul>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- navbar-->
+
+    <!-- sidebar -->
+
+    <div class="sidebar">
+      <a class="active" href="#home"><i class="bi bi-speedometer2"></i> Dashboard</a>
+      <a href="#news"><i class="bi bi-cart4"></i> Orders</a>
+      <a href="#contact"><i class="bi bi-kanban-fill"></i> Client Manager</a>
+    </div>
+
+    <!-- sidebar -->
+
+    <div class="content mt-5 pt-3">
+
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-md-12 fw-bold fs-3 text-uppercase">Admin Dashboard</div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-md-3 mb-3">
+            <div class="card text-white bg-primary mb-3 h-100">
+              <div class="card-header">Our Achievement</div>
+              <div class="card-body">
+                <p class="card-text">We sold the most number of gaming laptops among all e-commerce sites in 2021.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <div class="card text-white bg-danger mb-3 h-100">
+              <div class="card-header">Our Achievement</div>
+              <div class="card-body">
+                <p class="card-text">We won the award for the emerging business in 2021.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <div class="card text-white bg-warning mb-3 h-100">
+              <div class="card-header">News</div>
+              <div class="card-body">
+                <p class="card-text">We struck a deal with Apple as their premium supplier from 2022.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <div class="card text-white bg-success mb-3 h-100">
+              <div class="card-header">News</div>
+              <div class="card-body">
+                <p class="card-text">ABC Electronics will be operating in Europe from 15th March 2022.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row mt-3">
+          <div class="col-md-6 mb-6">
+            <div class="card ht-100">
+              <div class="card-header text-uppercase">
+                Distribution of revenue obtained
+              </div>
+              <div class="card-body">
+                  <img src="images/im1.png" class="img-fluid" height="450" width="500">
+              </div>
+            </div>
+          </div>
+            <div class="col-md-6 mb-6">
+              <div class="card ht-100">
+                <div class="card-header text-uppercase ">
+                  Units of different electronics items sold in 2021
+                </div>
+                <div class="card-body">
+                    <img src="images/im2.png" class="img-fluid" height="550" width="500">
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="row- t-3">
+        <div class="col-md-12">
+          Made with <i class="bi bi-heart-fill"></i> by Aagaaz Ali Sayed
+        </div>
+        
+      </div>
+      
+    </div>
+
+</body>
+</html>
